@@ -13,7 +13,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Hostit</title>
+  <title>DevForge - Contact Us</title>
 
 
   <!-- bootstrap core css -->
@@ -40,7 +40,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <span>Hostit</span>
+            <span>DevForge</span>
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,7 +123,6 @@
   <!-- end contact section -->
 
   <!-- info section -->
-
   <section class="info_section layout_padding2">
     <div class="container">
       <div class="row">
@@ -133,37 +132,37 @@
               Address
             </h4>
             <div class="contact_link_box">
-              <a href="">
+              <a href="https://maps.google.com?q=DevForge">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Location: 456 Code Lane, Tech City
                 </span>
               </a>
-              <a href="">
+              <a href="tel:+011234567890">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Call: +01 1234567890
                 </span>
               </a>
-              <a href="">
+              <a href="mailto:info@devforge.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  info@devforge.com
                 </span>
               </a>
             </div>
           </div>
           <div class="info_social">
-            <a href="">
+            <a href="#">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="#">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="#">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="#">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -174,19 +173,19 @@
               Links
             </h4>
             <div class="info_links">
-              <a class="" href="index.html">
+              <a href="index.html">
                 <img src="images/nav-bullet.png" alt="">
                 Home
               </a>
-              <a class="" href="about.html">
+              <a href="about.html">
                 <img src="images/nav-bullet.png" alt="">
                 About
               </a>
-              <a class="" href="service.html">
+              <a href="service.html">
                 <img src="images/nav-bullet.png" alt="">
                 Services
               </a>
-              <a class="" href="price.html">
+              <a href="price.html">
                 <img src="images/nav-bullet.png" alt="">
                 Pricing
               </a>
@@ -203,16 +202,16 @@
               Info
             </h4>
             <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+              At DevForge, we prioritize innovation and customer satisfaction. Our agile approach allows us to adapt quickly to your needs, ensuring we deliver high-quality results on time.
             </p>
           </div>
         </div>
-        <div class="col-md-3 mb-0">
+        <div class="col-md-3">
           <h4>
             Subscribe
           </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
+          <form action="/subscribe" method="post">
+            <input type="email" name="email" placeholder="Enter email" required />
             <button type="submit">
               Subscribe
             </button>
@@ -221,28 +220,33 @@
       </div>
     </div>
   </section>
-
   <!-- end info section -->
-
 
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> All Rights Reserved by
+        <a href="https://devforge.com">DevForge</a>
       </p>
     </div>
   </footer>
-  <!-- footer section -->
+  <!-- end footer section -->
 
-  <!-- jQery -->
+  <!-- jQuery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
 
+  <script>
+    document.getElementById("displayYear").innerHTML = new Date().getFullYear();
+
+    function showMore() {
+      document.getElementById('more-content').style.display = 'block';
+    }
+  </script>
 
 </body>
 
