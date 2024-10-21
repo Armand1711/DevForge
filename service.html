@@ -223,85 +223,130 @@
   <!-- end service section -->
 
   <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="https://maps.google.com?q=DevForge">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location: 456 Code Lane, Tech City
-                </span>
-              </a>
-              <a href="tel:+27123456789">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call: +27 21 123 4567
-                </span>
-              </a>
-              <a href="mailto:info@devforge.com">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  Email: info@devforge.com
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
+<section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="info_contact">
           <h4>
-            Quick Links
+            Address
           </h4>
-          <div class="info_link_box">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="service.html">Services</a>
-            <a href="price.html">Pricing</a>
-            <a href="contact.html">Contact Us</a>
+          <div class="contact_link_box">
+            <a href="https://maps.google.com?q=DevForge">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location: 456 Code Lane, Tech City
+              </span>
+            </a>
+            <a href="tel:+011234567890">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call: +27 21 123 4567
+              </span>
+            </a>
+            <a href="mailto:info@devforge.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                info@devforge.com
+              </span>
+            </a>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="info_social">
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info_link_box">
           <h4>
-            Newsletter
+            Links
           </h4>
-          <div class="info_form">
-            <input type="email" placeholder="Enter your email" />
-            <button>
-              Subscribe
-            </button>
+          <div class="info_links">
+            <a  href="index.html">
+              <img src="images/nav-bullet.png" alt="">
+              Home
+            </a>
+            <a href="about.html">
+              <img src="images/nav-bullet.png" alt="">
+              About
+            </a>
+            <a class="active" href="service.html">
+              <img src="images/nav-bullet.png" alt="">
+              Services
+            </a>
+            <a href="price.html">
+              <img src="images/nav-bullet.png" alt="">
+              Pricing
+            </a>
+            <a  href="contact.html">
+              <img src="images/nav-bullet.png" alt="">
+              Contact Us
+            </a>
           </div>
         </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info_detail">
+          <h4>
+            Info
+          </h4>
+          <p>
+            At DevForge, we prioritize innovation and customer satisfaction. Our agile approach allows us to adapt quickly to your needs, ensuring we deliver high-quality results on time.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4>
+          Subscribe
+        </h4>
+        <form action="/subscribe" method="post">
+          <input type="email" name="email" placeholder="Enter email" required />
+          <button type="submit">
+            Subscribe
+          </button>
+        </form>
       </div>
     </div>
-  </section>
-  <!-- end info section -->
+  </div>
+</section>
+<!-- end info section -->
 
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <div class="footer-logo">
-        <a href="index.html">
-          DevForge
-        </a>
-      </div>
-      <div class="footer_social">
-        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
-    </div>
-  </footer>
-  <!-- end footer section -->
+<!-- footer section -->
+<footer class="footer_section">
+  <div class="container">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved by
+      <a href="https://devforge.com">DevForge</a>
+    </p>
+  </div>
+</footer>
+<!-- end footer section -->
 
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
+<!-- jQuery -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.js"></script>
+<!-- custom js -->
+<script src="js/custom.js"></script>
+
+<script>
+  document.getElementById("displayYear").innerHTML = new Date().getFullYear();
+
+  function showMore() {
+    document.getElementById('more-content').style.display = 'block';
+  }
+</script>
 
 </body>
 
