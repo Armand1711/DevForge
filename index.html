@@ -766,15 +766,23 @@
       </div>
       <div class="col-md-3">
         <h4>
-          Subscribe
-        </h4>
-        <form action="/subscribe" method="post">
-          <input type="email" name="email" placeholder="Enter email" required />
-          <button type="submit">
             Subscribe
-          </button>
+        </h4>
+        <form onsubmit="showSubscriptionSuccess(event);">
+            <input type="email" name="email" placeholder="Enter email" required />
+            <button type="submit">
+                Subscribe
+            </button>
         </form>
-      </div>
+    </div>
+    
+    <script>
+        function showSubscriptionSuccess(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Thank you for subscribing! You will receive updates soon.");
+            // You can add your AJAX code here to actually send the email
+        }
+    </script>
     </div>
   </div>
 </section>
