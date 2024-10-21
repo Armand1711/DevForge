@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "DV-Theory-Group-3-DevForge"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "DV-Theory-Group-3-DevForge-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
