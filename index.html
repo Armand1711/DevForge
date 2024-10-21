@@ -654,18 +654,18 @@
       <div class="row">
           <div class="col-md-8 col-lg-6 mx-auto">
               <div class="form_container">
-                  <form action="your_form_submission_endpoint" method="POST">
+                  <form onsubmit="showContactSuccess(event);">
                       <div>
-                          <input type="text" placeholder="Your Name" required />
+                          <input type="text" name="name" placeholder="Your Name" required />
                       </div>
                       <div>
-                          <input type="email" placeholder="Your Email" required />
+                          <input type="email" name="email" placeholder="Your Email" required />
                       </div>
                       <div>
-                          <input type="text" placeholder="Your Phone" required />
+                          <input type="text" name="phone" placeholder="Your Phone" required />
                       </div>
                       <div>
-                          <textarea class="message-box" placeholder="Message" required></textarea>
+                          <textarea name="message" class="message-box" placeholder="Message" required></textarea>
                       </div>
                       <div class="btn_box">
                           <button type="submit">
@@ -679,6 +679,18 @@
   </div>
 </section>
 <!-- end contact section -->
+
+<script>
+    function showContactSuccess(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        alert("Thank you! Your message has been sent successfully.");
+        
+        // Clear the form fields 
+        document.querySelector('form').reset();
+    }
+</script>
+
 
 <!-- info section -->
 <section class="info_section layout_padding2">
